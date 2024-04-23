@@ -1,47 +1,24 @@
-import 'package:familylost_faan/pages/cubit/bottom_nav_cubit.dart';
-import 'package:familylost_faan/widgets/main_wrapper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:familylost_faan/pages/Homepage.dart';
+import 'package:familylost_faan/pages/CartPage.dart';
 
-import 'Screen/splash_screen.dart';
+void main() {
+  runApp(const MyApp());
+}
 
-void main() => runApp(const LostFamilyApp());
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-class LostFamilyApp extends StatelessWidget {
-  const LostFamilyApp({super.key});
-/*
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.light,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Color.fromRGBO(13, 71, 161, 1),
-          brightness: Brightness.light,
-        ),
-      ),
-      darkTheme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Color.fromRGBO(13, 71, 161, 1),
-          brightness: Brightness.dark,
-        ),
-      ),
-      home: BlocProvider(
-        create: (context) => BottomNavCubit(),
-        child: const MainWrapper(),
-      ),
-    );
-  }*/
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: MySplashScreen(),
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+      routes: {
+        "/": (context) => HomePage(),
+        "cartPage": (context) => CartPage(),
+      },
     );
   }
-
 }
