@@ -15,16 +15,10 @@ class HomeAppBar extends StatelessWidget {
       child: Row(
         children: [
           // Icono de menú de hamburguesa.
-          Icon(
-            Icons.sort,
-            size: 30,
-            color: Color(0xFF4C53A5),
-          ),
+
           // Espaciado //entre el icono y el texto del título.
           Padding(
-            padding: EdgeInsets.only(
-              left: 20,
-            ),
+            padding: EdgeInsets.zero,
             child: Text(
               // Texto del título de la aplicación.
               "FANN LOST",

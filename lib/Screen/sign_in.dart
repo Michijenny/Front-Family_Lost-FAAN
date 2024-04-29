@@ -71,7 +71,6 @@ class SignIn extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => BlocProvider(
                                     create: (context) => BottomNavCubit(),
-                                    child: const MainWrapper(),
                                   )));
                     },
                     child: Container(
