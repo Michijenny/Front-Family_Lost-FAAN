@@ -55,26 +55,28 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       ElevatedButton(
                         onPressed: () {
-                          // Handle "Publicaciones" button press
+                          //xd
                         },
                         child: Text(
                           'Publicaciones',
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
+                            color: Color.fromARGB(255, 82, 82, 82),
                           ),
                         ),
                       ),
                       SizedBox(width: 16),
                       ElevatedButton(
                         onPressed: () {
-                          // Handle "Otro" button press
+                          // xd
                         },
                         child: Text(
                           'Otro',
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
+                            color: Color.fromARGB(255, 82, 82, 82),
                           ),
                         ),
                       ),
