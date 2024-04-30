@@ -44,7 +44,7 @@ class _MainWrapperState extends State<MainWrapper> {
     HomePage(),
     FavoritePage(),
     HomePage(),
-    HomePage(),
+    ProfilePage()
   ];
 
   void onPageChanged(int page) {
